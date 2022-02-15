@@ -10,15 +10,15 @@ public class Account {
 	public String clonsing(int amountInYen){
 		MoneyForward MF = new MoneyForward();
 		String result = MF.createInvoice(this.name, amountInYen);
-        return result;
+		return result;
 	}
 
 	/**
-	 *  送金処理
+	 *  追加請求処理
 	 */
-    public String createInvoiceInTime(int amountInYen) {
+	public String createInvoiceInTime(int amountInYen) {
 		MoneyForward MF = new MoneyForward();
 		String result = MF.createInvoice(this.name, amountInYen);
-        return result;
-    }
+		return result;
+	}
 }
